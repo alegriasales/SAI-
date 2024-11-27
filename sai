@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商談プロ - AI × インテント 営業DB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #e6f0ff, #ffffff);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav {
+            background-color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1e40af;
+        }
+        nav .menu {
+            display: flex;
+            gap: 1.5rem;
+        }
+        nav .menu a {
+            color: #4b5563;
+            text-decoration: none;
+        }
+        .btn {
+            background-color: #f97316;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #ea580c;
+        }
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+            padding: 4rem 0;
+        }
+        .hero h1 {
+            font-size: 2.25rem;
+            color: #111827;
+        }
+        .hero .highlight {
+            font-size: 3rem;
+            color: #2563eb;
+        }
+        .features {
+            background-color: white;
+            padding: 4rem 0;
+        }
+        .features h2 {
+            text-align: center;
+            font-size: 1.875rem;
+            margin-bottom: 3rem;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+        .feature {
+            text-align: center;
+        }
+        .feature-icon {
+            width: 6rem;
+            height: 6rem;
+            background-color: #e5e7eb;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .second-section {
+            background-color: #f3f4f6;
+            padding: 5rem 0;
+        }
+        .second-section h2 {
+            text-align: center;
+            font-size: 1.875rem;
+            margin-bottom: 3rem;
+        }
+        .second-section .content {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+        }
+        .application-form {
+            background-color: #f3f4f6;
+            padding: 5rem 0;
+        }
+        .application-form h2 {
+            text-align: center;
+            font-size: 1.875rem;
+            margin-bottom: 2rem;
+        }
+        .form-container {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.25rem;
+        }
+        .form-submit {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">商談プロ</div>
+        <div class="menu">
+            <a href="#">提供中の機能</a>
+            <a href="#">選ばれる理由</a>
+            <a href="#">提供予定の機能</a>
+            <a href="#">よくある質問</a>
+            <a href="#">企業情報</a>
+            <a href="#" class="btn">無料で事前登録する</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="hero">
+            <div>
+                <h1>『AI × インテント』</h1>
+                <p>業界最大級の営業DBが</p>
+                <p class="highlight">完全無料</p>
+                <p>『商談プロ』は、中小企業から上場企業まで国内500万企業を、売上・業界・採用情報・インテントデータ・連絡先で絞り込み、瞬時に質の高い営業リストを作成できる、完全無料の営業データベースです。</p>
+                <a href="#" class="btn" style="display: block; text-align: center; padding: 1rem;">
+                    今だけ！30秒で完了<br>
+                    <span style="font-weight: normal;">無料で事前登録する</span>
+                </a>
+            </div>
+            <div style="position: relative;">
+                <img src="placeholder.jpg" alt="Database Interface" style="width: 100%; border-radius: 0.5rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: space-around; align-items: center;">
+                    <div class="feature-circle">AI検索も！</div>
+                    <div class="feature-circle">インテントデータも！</div>
+                    <div class="feature-circle">採用情報も！</div>
+                    <div class="feature-circle">連絡先も！</div>
+                    <div class="feature-circle">完全<br>無料</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="features">
+        <div class="container">
+            <h2>主な機能</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <img src="ai-search-icon.png" alt="AI検索" style="width: 48px; height: 48px;">
+                    </div>
+                    <h3>AI検索</h3>
+                    <p>AIによる高度な検索機能</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <img src="intent-data-icon.png" alt="インテントデータ" style="width: 48px; height: 48px;">
+                    </div>
+                    <h3>インテントデータ</h3>
+                    <p>企業の購買意欲データ</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <img src="recruitment-info-icon.png" alt="採用情報" style="width: 48px; height: 48px;">
+                    </div>
+                    <h3>採用情報</h3>
+                    <p>最新の採用動向</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <img src="contact-info-icon.png" alt="連絡先情報" style="width: 48px; height: 48px;">
+                    </div>
+                    <h3>連絡先情報</h3>
+                    <p>正確な企業連絡先</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="second-section">
+        <div class="container">
+            <h2>もう<span style="color: #2563eb;">営業データベース</span>は<br><span style="color: #2563eb; font-size: 3rem;">完全無料</span>の時代</h2>
+            <div class="content">
+                <div style="flex: 1;">
+                    <h3>我々商談プロは、常に経営者・営業パーソンの皆様にとって</h3>
+                    <p>最高の営業データベースを提供し続けます。</p>
+                    <ul>
+                        <li>500万社以上の企業データ</li>
+                        <li>AIによる高度な検索機能</li>
+                        <li>インテントデータの活用</li>
+                        <li>常に最新の情報を提供</li>
+                    </ul>
+                </div>
+                <div style="flex: 1;">
+                    <img src="database-image.jpg" alt="営業データベースのイメージ" style="width: 100%; border-radius: 0.5rem;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="application-form">
+        <div class="container">
+            <h2>無料事前登録フォーム</h2>
+            <div class="form-container">
+                <form id="registration-form">
+                    <div class="form-group">
+                        <label for="company">会社名</label>
+                        <input type="text" id="company" name="company" placeholder="株式会社〇〇" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" placeholder="example@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">電話番号</label>
+                        <input type="tel" id="phone" name="phone" placeholder="03-1234-5678" required>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="btn" style="font-size: 1.125rem; padding: 1rem 3rem;">無料で事前登録する</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('registration-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // ここにフォーム送信のロジックを実装します
+            alert('フォームが送信されました！');
+        });
+    </script>
+</body>
+</html>
